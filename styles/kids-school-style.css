@@ -98,7 +98,7 @@ section{
     align-items: center;
 }
 
-.logo{
+.logo img{
     width: 62px;
     height: 62px;
 }
@@ -126,6 +126,11 @@ section{
 .nav-btn button{
     background-color: #FEA301;
 }
+
+.nav-btn .fa-bars{
+    display: none;
+}
+
 
 
 /* Banner related styles */
@@ -227,12 +232,12 @@ section{
 
     .nav{
         padding: 16px;
-        flex-direction: column;
         border: 0.5px solid #FEA301;
-        gap: 1rem;
     }
-    
-    .logo{
+    .logo-area{
+        align-items: center;
+    }
+    .logo img{
         width: 46px;
         height: 46px;
     }
@@ -240,8 +245,19 @@ section{
         display: none;
     }
     .nav-items {
-        gap: 1.5rem;
-        padding: 0;
+        /* gap: 1.5rem;
+        padding: 0; */
+        display: none;
+    }
+    .nav-btn button{
+        display: none;
+    }
+    .nav-btn .fa-bars{
+        display: inline;
+    }
+    .fa-bars:before, .fa-navicon:before {
+        content: "\f0c9";
+        font-size: 30px;
     }
 
     .banner{
@@ -311,9 +327,9 @@ section{
     .nav{
         padding: 16px;
     }
-    .logo{
-        width: 46px;
-        height: 46px;
+    a .logo {
+        width: 86px;
+        height: 86px;
     }
     .brand-name{
         display: none;
