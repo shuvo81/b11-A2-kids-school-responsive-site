@@ -469,7 +469,7 @@ section.footer{
     }
 
     .story-card{
-        width: 194px;
+        width: 190px;
         height: 200px;
         border-radius: 16px;
         background-color: #FFFFFF;
@@ -519,7 +519,6 @@ section.footer{
         font-size: 1rem;
         margin-top: 23px;
     }
-
     .column-title-1{
         font-size: 1.25rem;
         margin-bottom: 27px;
