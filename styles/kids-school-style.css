@@ -66,7 +66,7 @@ h1,h2,h3,h4,h5,h6{
     font-size: 1.25rem;
     font-weight: 600;
     padding: 10px 60px;
-    border: 0;
+    border: none;
 }
 
 .header,
@@ -213,39 +213,106 @@ section{
 }
 
 /* Our stories related styles */
-.our-stories{
+.our-stories {
     padding: 0 140px;
     background-image: url(../assets/bg.png);
     background-repeat: no-repeat;
 }
-.story-items{
-    display: grid;
-    gap: 28px;
-    grid-template-columns: 2fr 1fr 1fr;
-    text-align: left;
-    margin-top: 80px;
-    margin-bottom: 80px;
+
+.aqua-btn{
+    background-color: #3CD8E8;
+    padding: 14px 19px ;
+}
+.green-btn{
+    background-color: #95B226;
+    padding: 9px 19px;
+}
+.navy-btn{
+    background-color: #5D58F0;
+    padding: 9px 19px;
+}
+
+.story-card button{
+    border-radius: 2rem;
+    font-size: 1rem;
+    border: none;
+    color: #FFF;
+}
+
+.story-card-content{
+    padding: 0  38px 38px;
+}
+
+.story-card-content {
+    margin-top: -24px;
 }
 .story-card{
+    width: 290px;
+    height: 300px;
     border-radius: 16px;
+    background-color: #FFFFFF;
 }
-.story-card .card-media img{
-    width: 136px;
-    height: 136px;
+
+
+.story1-card {
+    grid-area: str1;
+    width: 540px;
+    height: 630px;
 }
-.story-card .story-card-title{
+.story2-card {
+    grid-area: str2;
+}
+.story3-card {
+    grid-area: str3;
+}
+.story4-card {
+    grid-area: str4;
+}
+.story5-card {
+    grid-area: str5;
+}
+
+.story-items {
+    display: grid;
+    grid-gap: 19px;
+    justify-content: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+        "str1 str1 str2 str3"
+        "str1 str1 str4 str5";
+}
+.story1-card button{
+    font-size: 1rem;
+    font-weight: 500;
+}
+.story-card .story-card-title {
     font-size: 1rem;
     font-weight: 700;
-    margin-top: 32px;
+    margin-top: 19px;
 }
-.story-card .story1-title{
+.story-card .story1-title {
     font-size: 1.5rem;
+    margin-top: 33px;
 }
-.story-card .story-card-description{
+.story-card .story-card-description {
     font-size: 1rem;
     font-weight: 500;
     margin-top: 32px;
     color: #666666;
+}
+.story-card-media img {
+    width: 100%;
+    border-radius: 16px 16px 0px 0px;
+}
+
+.our-stories .view-all-btn{
+    background-color: #111111;
+    
+}
+.view-all{
+    text-align: center;
 }
 
 
