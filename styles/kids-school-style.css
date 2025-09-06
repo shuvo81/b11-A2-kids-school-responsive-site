@@ -385,8 +385,8 @@ section{
         height: 412px;
     }
     
-    .standard-curriculum {
-        padding: 0 20px;
+    .standard-curriculum, .our-stories {
+        padding: 0 16px;
     }
     .card-items{
         gap: auto; 
@@ -408,17 +408,55 @@ section{
         font-size: 1rem;
         margin-top: 22px;
     }
+    
     .card .card-description{
         font-size: 11px;
         margin-top: 22px;
     }
+
     .card button{
         font-size: 11px;
         margin-top: 32px;
     }
+
     .arrow-icons{
         display: none;
     }
+
+    .story-card{
+        width: 174px;
+        height: 180px;
+        border-radius: 16px;
+        background-color: #FFFFFF;
+    }
+
+    .story1-card{
+        display: none;
+    }
+
+    .story-items {
+        grid-gap: 11px;
+        margin: 20px 16px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "str2 str3"
+            "str4 str5";
+    }
+
+    .story-card button {
+        font-size: 10px;
+    }
+
+    .story-card .story-card-title {
+        font-size: 10px;
+        margin-top: 11px;
+    }
+
+    .story-card-content {
+        padding: 0 22px 17px;
+    }
+
+
 
 }
 
