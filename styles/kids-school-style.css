@@ -20,6 +20,11 @@ body{
     background-color: #f7f7f7;
 }
 
+.header,
+.main{
+    margin: 0 auto;
+    max-width: 1440px;
+}
 h1,h2,h3,h4,h5,h6{
     margin: 0;
 }
@@ -67,12 +72,6 @@ h1,h2,h3,h4,h5,h6{
     font-weight: 600;
     padding: 10px 60px;
     border: none;
-}
-
-.header,
-.main{
-    margin: 0 auto;
-    max-width: 1440px;
 }
 
 .section-title{
@@ -585,8 +584,7 @@ section.footer{
     }
 
     .arrow-icons{
-        display: bloc
-        ;
+        display: block;
     }
 
     .story1-card {
