@@ -375,6 +375,9 @@ section.footer{
 
 /* Mobile responsive media query */
 @media screen and (max-width: 576px){
+    .standard-curriculum, .our-stories {
+        padding: 40px 16px;
+    }
     .btn-primary{
         font-size: 1rem;
         padding: 6px 24px;
@@ -434,9 +437,6 @@ section.footer{
         height: 412px;
     }
     
-    .standard-curriculum, .our-stories {
-        padding: 40px 16px;
-    }
     .card-items{
         gap: 16px; 
         grid-template-columns: repeat(1, 1fr);
@@ -473,8 +473,8 @@ section.footer{
     }
 
     .story-card{
-        width: 190px;
-        height: 200px;
+        /* width: 190px;
+        height: 200px; */
         border-radius: 16px;
         background-color: #FFFFFF;
     }
@@ -546,6 +546,16 @@ section.footer{
 
 /* Tablet responsive media query */
 @media screen and (min-width:576px) and (max-width: 992px){
+    .standard-curriculum, .our-stories {
+        padding: 40px 16px;
+    }
+
+    .card-items,
+    .story-items {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
     .nav{
         padding: 16px;
     }
@@ -574,12 +584,11 @@ section.footer{
         height: auto;
     }
 
-    .standard-curriculum,
-    .our-stories 
-    {
-        padding: 0 16px;
-        
+    .arrow-icons{
+        display: bloc
+        ;
     }
+
     .story1-card {
         display: none;
     }
@@ -593,6 +602,10 @@ section.footer{
         grid-template-areas:
             "str2 str3"
             "str4 str5";
+    }
+
+    .parent-footer {
+        padding: 60px 16px 60px 16px;
     }
 
 }
