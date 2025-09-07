@@ -246,8 +246,10 @@ h1,h2,h3,h4,h5,h6{
     margin-top: -24px;
 }
 .story-card{
+/*
     width: 290px;
     height: 300px;
+*/
     border-radius: 16px;
     background-color: #FFFFFF;
 }
@@ -255,8 +257,10 @@ h1,h2,h3,h4,h5,h6{
 
 .story1-card {
     grid-area: str1;
+/*
     width: 540px;
     height: 630px;
+*/
 }
 .story2-card {
     grid-area: str2;
@@ -590,11 +594,5 @@ section.footer{
             "str2 str3"
             "str4 str5";
     }
-
-    .story-card{
-        
-    }
-
-    
 
 }
